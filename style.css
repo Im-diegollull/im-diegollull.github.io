@@ -1,0 +1,50 @@
+body {
+  font-family:  var(--chakra-fonts-body);
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.skills-table {
+  width: 50%;
+  border-collapse: collapse;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: black;
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.skills-table th {
+  background-color: #121212;
+  font-weight: bold;
+}
+
+.skills-table tr:nth-child(even) {
+  background-color: #3e3c3c;
+}
+
+.skills-table tr:hover {
+  background-color: #21099a;
+}
+
+.skills-table td:first-child {
+  font-weight: bold;
+}
+
