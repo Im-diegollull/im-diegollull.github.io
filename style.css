@@ -17,8 +17,61 @@ h2 {
   text-align: center;
 }
 
+
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4B0082; 
+  color: #fff;
+  border-radius: 10px; /
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.title-box {
+  background-color: #4e2bff; 
+  padding: 10px 2cqb;
+  border-radius: 10px;
+  display: inline-block; 
+}
+
+h1 {
+  margin: 0;
+}
+
+.content {
+  text-align: center;
+}
+
+.content p {
+  margin-top: 20px; 
+}
+
 .skills-table {
   width: 50%;
+  margin: 0 auto; 
   border-collapse: collapse;
   border: 2px solid #fff;
   color: #fff;
@@ -47,4 +100,10 @@ h2 {
 .skills-table td:first-child {
   font-weight: bold;
 }
+
+summary {
+  margin-top: 20px; 
+}
+
+
 
