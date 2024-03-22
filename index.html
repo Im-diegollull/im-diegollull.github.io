@@ -6,81 +6,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>im-diegollull.github.io</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-    <div class="header">
-      <div class="title-box">
-        <h1>Lab 1 Web Technologies</h1>
-        <h2>Diego Llull</h2>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#"><strong>Personal Page</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="content">
-      <p><strong>Major:</strong> Civil en Ciencias de la Computación</p>
-      <p><strong>Year of University Enrollment:</strong> 2021</p>
-      <p><strong>Link to Github:</strong> <a href="https://github.com/Im-diegollull">IM-DIEGOLlull</a></p>
-    </div>
-    <div class="summary">
-      <p><strong>Personal Summary:</strong> 
-        My name is Diego Llull and I´m 22 years old and I like League of Legends.</p>
-    </div>
- 
+  </nav>
 
-    <table class="skills-table">
-      <tr>
-        <th>Skill</th>
-        <th>Level</th>
-      </tr>
-      <tr>
-        <td>Python</td>
-        <td>Advanced</td>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-        <td>Basic</td>
-      </tr>
-      <tr>
-        <td>HTML/CSS</td>
-        <td>Basic</td>
-      </tr>
-      <tr>
-        <td>Git</td>
-        <td>Intermediate</td>
-      </tr>
-      <tr>
-        <td>Excel</td>
-        <td>Basic</td>
-      </tr>
-      <tr>
-        <td>SQL</td>
-        <td>Advances</td>
-      </tr>
-      <tr>
-        <td>Ruby</td>
-        <td>None</td>
-      </tr>
-      <tr>
-        <td>English</td>
-        <td>Advanced</td>
-      </tr>
-      <tr>
-        <td>Spanish</td>
-        <td>Native</td>
-      </tr>
-    </table>
-  </div>
+  <main class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="header">
+          <div class="title-box">
+            <h1><strong>Lab 2 Web Technologies</strong></h1>
+            <h2>Diego Llull</h2>
+          </div>
+        </div>
+
+        <div class="content-summary-container">
+          <div class="content">
+            <div class="info-box">
+              <p><strong>Major:</strong> Civil en Ciencias de la Computación</p>
+              <p><strong>Year of University Enrollment:</strong> 2021</p>
+              <p><strong>Link to Github:</strong> <a href="https://github.com/Im-diegollull">IM-Diego_Llull</a></p>
+              <p><strong>Personal Summary:</strong> My name is Diego Llull, I'm 22 years old and I like football and League of Legends.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-div">
+          <button onclick="agregarTexto()">Agregar Texto</button>
+          <input type="text" name="texto" id="texto-input" placeholder="Escribe tu texto aquí">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Python</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Basic</td>
+            </tr>
+            <tr>
+              <td>HTML/CSS</td>
+              <td>Basic</td>
+            </tr>
+            <tr>
+              <td>Git</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>Excel</td>
+              <td>Basic</td>
+            </tr>
+            <tr>
+              <td>SQL</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <td>Ruby</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <td>Spanish</td>
+              <td>Native</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div id="texto-agregado"></div>
+      </div>
+    </div>
+
+    <div id="center-div">
+      <h3>Percentage of the semester carried</h3>
+      <div class="progress" role="progressar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar text-bg-warning" style="width: 17,21%">17,21</div>
+      </div>
+
+      <div class="container">
+        <h3>Loading semester...</h3>
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading semester...</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="boton.js"></script>
+
+  <script>
+    function agregarTexto() {
+      const textoInput = document.getElementById('texto-input').value;
+      if (textoInput.trim() !== '') {
+        const nuevoParrafo = document.createElement('p');
+        nuevoParrafo.textContent = textoInput;
+        document.getElementById('texto-agregado').appendChild(nuevoParrafo);
+      }
+    }
+  </script>
+
 </body>
-  <body>
-  <div class="custom-section">
-    <input type="color" id="colorInput">
-    <button id="changeColorButton">Change colour botton (:</button>
-  </div>
-  <div id="colorDisplay"></div>
-  </div>
 
-  <script src="script.js"></script>
-  </body>
-
-  </html>
+</html>
